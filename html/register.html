@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registrarse</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <header>
+        <iframe src="./header.html" frameborder="0" width="100%" height="100%"></iframe>
+    </header>
+
+    <main>
+        <h1 class="titulo">Registro</h1>
+        <h4 class="subtitulo">(*) Todos los campos son obligatorios</h4>
+
+        <form action="">
+            <label for="nombre" class="etiquetas" >Nombre (*)</label>
+            <input type="text" id="nombre" name="nombre" class="entrada" placeholder="Ingrese su nombre">
+            <label for="apellido" class="etiquetas">Apellido (*)</label>
+            <input type="text" id="apellido" name="apellido" class="entrada" placeholder="Ingrese su apellido">
+            <label for="correo" class="etiquetas">Correo (*)</label>
+            <input type="email" id="correo" name="correo" class="entrada" placeholder="Ingrese su email">
+            <label for="contrasenia" class="etiquetas">Contraseña (*)</label>
+            <input type="password" id="contrasenia" name="contrasenia" class="entrada" placeholder="Ingrese su contraseña">
+            <div class="confirmacion"> <button class="button" id="cancelar">cancelar</button>
+            <input type="submit" value="continuar" class="button" id="continuar">
+            </div>
+           
+        </form>
+
+      
+    </main>
+
+    <footer>
+        <iframe src="./footer.html" frameborder="0" width="100%" height="100%"></iframe>
+    </footer>
+</body>
+</html>
