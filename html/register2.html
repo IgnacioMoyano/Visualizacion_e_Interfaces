@@ -15,29 +15,32 @@
         <h1 class="titulo">Registro</h1>
         <h4 class="subtitulo">(*) Todos los campos son obligatorios</h4>
 
+        <div class="Formulario">
         <form action="">
-            <div>
+        <div class="nacimientoContent">
             <label for="fecha" class="etiquetas">Fecha de nacimiento (*)</label>
-            <input type="date" id="fecha" name="fecha" class="entrada" placeholder="Ingrese su nombre" value="2023-11-15" min="1950-01-01" max="2023-12-31">
+            <input type="date" id="fecha" name="fecha" class="entrada"  max="2023-12-31">
         </div>
             <div class="documento">
                 <div class="tipo">
-                <label for="tipo_documento" class="etiquetas">Tipo(*)</label>
+                <label for="tipo_documento" class="etiquetas">Tipo</label>
                 <select name="tipo_documento" id="tipo_documento" class="entrada">
+                    <option value=""></option>
                     <option value="dni">DNI </option>
                     <option value="LC">LC </option>
                     <option value="LE">LE </option>
                 </select>
             </div>
-            <div class="tipo">
-                <label for="numero_documento" class="etiquetas" id="tipo">nº De Documento</label>
-                <input type="number" id="numero_documento" name="numero_documento" class="entrada" placeholder="Ingrese su numero de documento">
+            <div class="numeroDocumentoContent">
+                <label for="numero_documento" class="etiquetas" id="tipo">Nº De Documento (*)</label>
+                <input type="number" id="numero_documento" name="numero_documento" class="entrada" placeholder="Numero de Documento">
                 </div>
             </div>
             
             <div class="sexoBiologicoContent">
             <label for="sexo" class="etiquetas">Sexo Biologico (*)</label>
             <select name="sexo" id="sexo" class="entrada">
+                <option value="">Seleccione un sexo</option>
                 <option value="femenino">Femenino</option>
                 <option value="masculino">Masculino</option>
                 <option value="otros">otro</option>
@@ -53,7 +56,7 @@
             </div>
            
         </form>
-
+    </div>
       
     </main>
 
