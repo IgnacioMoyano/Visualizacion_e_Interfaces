@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+main{
+    display: grid;
+    place-items: center;
+    color: #13167D;
+    min-height: calc(100% - 191px);
+    
+}
+
+.contenedorMenu{
+    background-color: #336675;
+    padding: 20px 0px;
+}
+
+.contenedorMenu a{
+    margin: 0 3%;
+    text-decoration: none;
+    color: white;
+}
+
+.contenedorCarrousel{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.tituloImagen{
+    position: absolute;
+    top: 27%;
+    left: 15%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.subtituloImagen{
+    position: absolute;
+    top: 40%;
+    left: 11%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6em;
+}
+
+.botonSacarTurno{
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    background-color: #0D7646;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.botonSacarTurno a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7em;
+}
+
+.contenedorCarrousel img{
+width: 100%;
+}
