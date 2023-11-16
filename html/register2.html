@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/register2.css">
+    <link rel="stylesheet" href="../css/register2.css">
     <title>Registrarse</title>
 </head>
 <body>
@@ -16,8 +16,10 @@
         <h4 class="subtitulo">(*) Todos los campos son obligatorios</h4>
 
         <form action="">
+            <div>
             <label for="fecha" class="etiquetas">Fecha de nacimiento (*)</label>
             <input type="date" id="fecha" name="fecha" class="entrada" placeholder="Ingrese su nombre" value="2023-11-15" min="1950-01-01" max="2023-12-31">
+        </div>
             <div class="documento">
                 <div class="tipo">
                 <label for="tipo_documento" class="etiquetas">Tipo(*)</label>
@@ -28,19 +30,24 @@
                 </select>
             </div>
             <div class="tipo">
-                <label for="numero_documento" class="etiquetas">nº De Documento</label>
+                <label for="numero_documento" class="etiquetas" id="tipo">nº De Documento</label>
                 <input type="number" id="numero_documento" name="numero_documento" class="entrada" placeholder="Ingrese su numero de documento">
                 </div>
             </div>
             
+            <div class="sexoBiologicoContent">
             <label for="sexo" class="etiquetas">Sexo Biologico (*)</label>
             <select name="sexo" id="sexo" class="entrada">
                 <option value="femenino">Femenino</option>
                 <option value="masculino">Masculino</option>
                 <option value="otros">otro</option>
             </select>
+        </div>
+
+        <div class="telefonoContent">
             <label for="telefono" class="etiquetas">Telefono (*)</label>
             <input type="number" id="telefono" name="telefono" class="entrada" placeholder="Ingrese su telefono">
+        </div>
             <div class="confirmacion"> <button class="button" id="cancelar">cancelar</button>
             <input type="submit" value="continuar" class="button" id="continuar">
             </div>
