@@ -13,14 +13,6 @@ html{
 }
 
 
-main{
-    display: grid;
-    place-items: center;
-    color: #13167D;
-    min-height: calc(100% - 191px);
-    
-}
-
 .contenedorMenu{
     background-color: #336675;
     padding: 20px 0px;
@@ -36,6 +28,7 @@ main{
     position: relative;
     display: inline-block;
     text-align: center;
+    background-color: #336675;
 }
 
 .tituloImagen{
@@ -72,4 +65,41 @@ main{
 
 .contenedorCarrousel img{
 width: 100%;
+}
+
+.contenedorContacto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 1% 0%;
+    background-color: #336675;
+    color: white;
+}
+
+.contenedorContacto div{
+    width: 10%;
+    height: auto;
+}
+
+.tituloSucursal{
+    width: 80%;
+    margin: auto;
+}
+
+.contenedorSucursales{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.contenedorSucursales div{
+    width: 30%;
+    height: auto;
+}
+
+.contenedorSucursales img{
+    height: 25%;
 }
