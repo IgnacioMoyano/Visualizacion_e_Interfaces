@@ -1,0 +1,24 @@
+.contenido{
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto auto auto;
+}
+
+.imagen img{
+    width: 75%;
+}
+
+.texto{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.links ul{
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
