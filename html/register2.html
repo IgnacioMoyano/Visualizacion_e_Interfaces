@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/register2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <title>Registrarse</title>
 </head>
@@ -21,7 +22,12 @@
         <div class="Formulario">
         <form action="">
         <div class="nacimientoContent">
-            <label for="fecha" class="etiquetas">Fecha de nacimiento (*)</label>
+            <div class="nacimientoIconText">
+            <span class="material-symbols-outlined">
+                cake
+                </span>
+            <label for="fecha" class="etiquetas">Nacimiento (*)</label>
+        </div>
             <input type="date" id="fecha" name="fecha" class="entrada"  max="2023-12-31">
         </div>
             <div class="documento">
@@ -41,7 +47,12 @@
             </div>
             
             <div class="sexoBiologicoContent">
+        <div class="sexoIconText">
+            <span class="material-symbols-outlined">
+                female
+                </span>
             <label for="sexo" class="etiquetas">Sexo Biologico (*)</label>
+        </div>
             <select name="sexo" id="sexo" class="entrada">
                 <option value="">Seleccione un sexo</option>
                 <option value="femenino">Femenino</option>
@@ -51,7 +62,12 @@
         </div>
 
         <div class="telefonoContent">
+        <div class="telefonoIconText">
+            <span class="material-symbols-outlined">
+                call
+                </span>
             <label for="telefono" class="etiquetas">Telefono (*)</label>
+        </div>
             <input type="number" id="telefono" name="telefono" class="entrada" placeholder="Ingrese su telefono">
         </div>
             <div class="confirmacion"> <button class="button" id="cancelar">Anterior</button>
