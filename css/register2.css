@@ -94,7 +94,7 @@ main form .documento{
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 70%;
+    width: 90%;
     flex-direction: row;
     align-items: center;
 }
@@ -129,11 +129,11 @@ main form #sexo{
 }
 
 main form #tipo{
-width: 105%;
+width: 100%;
 }
 
 main form #numero_documento{
-    padding: 0.9em;
+    padding: 0.97em;
     width: 100%;
 }
 
@@ -145,7 +145,7 @@ main form #telefono{
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 70%;
+    width: 90%;
     flex-direction: column;
     align-items: center;
 }
@@ -154,7 +154,7 @@ main form #telefono{
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 70%;
+    width: 90%;
     flex-direction: column;
     align-items: center;
 }
@@ -163,13 +163,13 @@ main form #telefono{
    
     text-align: center;
 
-    width: 70%;
+    width: 90%;
 
 }
 
 .documento{
     text-align: center;
-    width: 70%;
+    width: 90%;
 }
 
 
@@ -188,5 +188,151 @@ footer{
   box-sizing: border-box;
 }
 
+.nacimientoIconText{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sexoIconText{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.telefonoIconText{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 
+
+.nombreContent{
+   
+   
+    text-align: center;
+
+    width: 116%;
+
+
+}
+
+main form #nombre{
+    width: 100%;
+}
+
+.apellidoContent{
+   
+   
+    text-align: center;
+
+    width: 116%;
+
+
+}
+
+main form #apellido{
+    width: 100%;
+}
+
+.correoContent{
+   
+   
+    text-align: center;
+
+    width: 116%;
+
+
+}
+
+main form #correo{
+    width: 100%;
+}
+
+.contraseniaContent{
+   
+    
+    text-align: center;
+
+    width: 116%;
+
+
+}
+
+main form #contrasenia{
+    width: 100%;
+}
+
+.apellidoIconText{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.correoIconText{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contraseniaIconText{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.nombreIconText{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+@media (max-width:900px){
+    main .subtitulo{
+        font-size: 16px;
+        margin-bottom: 3rem;
+    }
+
+
+    main form .confirmacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    main form .confirmacion .button{
+        height: 5vh;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+@media (min-width:900px) and (max-width:1440px){
+ 
+
+    main form .confirmacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    main form .confirmacion .button{
+        height: 5vh;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+    }
+}
