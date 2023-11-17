@@ -194,6 +194,18 @@ width: 100%;
 
 @media only screen and (max-width: 600px){
 
+    .contenedorMenu{
+        display: none;
+    }
+
+    .contenedorCarrousel{
+        display: none;
+    }
+
+    .contenedorContacto{
+        display: none;
+    }
+
     .contenedorInformacion{
         display: grid;
         grid-template-columns: auto auto;
@@ -208,7 +220,7 @@ width: 100%;
         display: flex;
         background-color: white;
         padding: 1%;
-        width: 12em;
+        width: 10em;
         height: 12em;
         justify-content: center;
         align-items: center;
