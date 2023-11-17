@@ -12,6 +12,11 @@ html{
     padding: 0;
 }
 
+main{
+    background-color: #EEEEEE;
+}
+
+/* PARTE DEL MENU DE ARRIBA DE CARROUSEL */
 
 .contenedorMenu{
     background-color: #336675;
@@ -23,6 +28,8 @@ html{
     text-decoration: none;
     color: white;
 }
+
+/* CARROUSEL Y TEXTO DE IMAGEN */
 
 .contenedorCarrousel{
     position: relative;
@@ -51,7 +58,7 @@ html{
 .botonSacarTurno{
     position: absolute;
     top: 60%;
-    left: 23%;
+    left: 22%;
     background-color: #0D7646;
     padding: 10px 30px;
     border-radius: 20px;
@@ -67,6 +74,8 @@ html{
 width: 100%;
 }
 
+/* PARTE DE CONTACTO */
+
 .contenedorContacto{
     display: flex;
     text-align: center;
@@ -77,29 +86,74 @@ width: 100%;
     color: white;
 }
 
+
 .contenedorContacto div{
     width: 10%;
     height: auto;
 }
 
-.tituloSucursal{
-    width: 80%;
-    margin: auto;
-}
+/* PARTE DE LAS SUCURSALES */
 
-.contenedorSucursales{
-    width: 90%;
-    margin: auto;
+.contenedorSucursal {
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.contenedorSucursales div{
+.contenedorSucursal div{
     width: 30%;
+    height: 50%;
+}
+
+.contenedorSucursal img{
+    width: 80%;
     height: auto;
 }
 
-.contenedorSucursales img{
-    height: 25%;
+.tituloSucursal{
+    padding-left: 9%;
+    margin: 3% 0%;
+}
+
+.contenedorBotonSucursal{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 4% 0%;
+}
+
+.verTodasSucursales{
+    background-color: #0D7646;
+    padding: 1% 2%;
+    border-radius: 45px;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* PARTE DE LA INFORMACION */
+
+.tituloInformacion{
+    padding-left: 9%;
+    margin: 3% 0%;
+}
+
+.contenedorInformacion{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 2%;
+    column-gap: 2%;
+    row-gap: 2%;  
+}
+
+.grid-item{
+    display: flex;
+    background-color: white;
+    padding: 1%;
+    width: 17em;
+    height: 14em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
