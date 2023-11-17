@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>registrarse</title>
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/register2.css">
+   
 </head>
 <body>
     <header>
@@ -15,21 +18,31 @@
         <h1 class="titulo">Registro</h1>
         <h4 class="subtitulo">(*) Todos los campos son obligatorios</h4>
 
+        <div class="Formulario">
         <form action="">
-            <label for="nombre" class="etiquetas" >Nombre (*)</label>
+        <div class="nombreContent">
+            <label for="nombre" class="etiquetas" >Nombre ()</label>
             <input type="text" id="nombre" name="nombre" class="entrada" placeholder="Ingrese su nombre">
-            <label for="apellido" class="etiquetas">Apellido (*)</label>
-            <input type="text" id="apellido" name="apellido" class="entrada" placeholder="Ingrese su apellido">
-            <label for="correo" class="etiquetas">Correo (*)</label>
-            <input type="email" id="correo" name="correo" class="entrada" placeholder="Ingrese su email">
-            <label for="contrasenia" class="etiquetas">Contraseña (*)</label>
-            <input type="password" id="contrasenia" name="contrasenia" class="entrada" placeholder="Ingrese su contraseña">
-            <div class="confirmacion"> <button class="button" id="cancelar">cancelar</button>
-            <button class="button" id="continuar"><a href="./register2.html" class="enlace">continuar</a></button>
+        </div>
+            <div class="apellidoContent">
+                <label for="apellido" class="etiquetas">Apellido ()</label>
+                <input type="text" id="apellido" name="apellido" class="entrada" placeholder="Ingrese su apellido">
             </div>
-           
-        </form>
+            
+            <div class="correoContent">
+                <label for="correo" class="etiquetas">Correo ()</label>
+                <input type="email" id="correo" name="correo" class="entrada" placeholder="Ingrese su email">
+        </div>
 
+        <div class="contraseniaContent">
+            <label for="contrasenia" class="etiquetas">Contraseña ()</label>
+            <input type="password" id="contrasenia" name="contrasenia" class="entrada" placeholder="Ingrese su contraseña">
+        </div>
+                <div class="confirmacion"> <button class="button" id="cancelar">Cancelar</button>
+                <input type="submit" value="Continuar" class="button" id="continuar">
+                </div>
+        </form>
+        </div>
       
     </main>
     <footer>

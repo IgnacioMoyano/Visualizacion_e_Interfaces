@@ -190,3 +190,50 @@ footer{
 
 
 
+.nombreContent{
+   
+    text-align: center;
+
+    width: 70%;
+
+}
+
+main form #nombre{
+    width: 96%;
+}
+
+.apellidoContent{
+   
+    text-align: center;
+
+    width: 70%;
+
+}
+
+main form #apellido{
+    width: 96%;
+}
+
+.correoContent{
+   
+    text-align: center;
+
+    width: 70%;
+
+}
+
+main form #correo{
+    width: 96%;
+}
+
+.contraseniaContent{
+   
+    text-align: center;
+
+    width: 70%;
+
+}
+
+main form #contrasenia{
+    width: 96%;
+}
