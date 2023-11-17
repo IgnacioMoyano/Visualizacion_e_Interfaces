@@ -8,6 +8,12 @@ var currentMonth = month;
 var year = now.getFullYear();
 
 
+const modal = document.getElementById('myModal');
+const btnAceptar = document.getElementById('btnAceptar');
+const btnCerrar = document.getElementById('btnCerrar');
+const closeBtn = document.getElementsByClassName('close')[0];
+const abrirBtn = document.getElementById('continuar');
+
 initCalender();
 console.log(startDay());
 
@@ -83,3 +89,25 @@ $("#next_month").click(function(){
 $("#last_month").click(function(){
     getPrevMonth();
 })
+
+
+// Abre el modal cuando se hace clic en algún botón (puedes ajustar este evento según tu necesidad)
+continuar.addEventListener('click', function () {
+    modal.style.display = 'block';
+});
+
+// Cierra el modal si se hace clic en el botón "Cerrar" o en la "x"
+btnCerrar.addEventListener('click', function () {
+    modal.style.display = 'none';
+});
+
+closeBtn.addEventListener('click', function () {
+    modal.style.display = 'none';
+});
+
+// Cierra el modal si se hace clic fuera de él
+window.addEventListener('click', function (event) {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
