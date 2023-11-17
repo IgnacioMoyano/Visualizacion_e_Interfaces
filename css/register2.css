@@ -294,3 +294,45 @@ main form #contrasenia{
     justify-content: center;
     align-items: flex-end;
 }
+
+
+
+@media (max-width:900px){
+    main .subtitulo{
+        font-size: 16px;
+        margin-bottom: 3rem;
+    }
+
+
+    main form .confirmacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    main form .confirmacion .button{
+        height: 5vh;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+    }
+}
+
+@media (min-width:900px) and (max-width:1440px){
+ 
+
+    main form .confirmacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    main form .confirmacion .button{
+        height: 5vh;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+    }
+}
