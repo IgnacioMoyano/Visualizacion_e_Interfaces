@@ -1,0 +1,71 @@
+header{
+    background-color: white;
+}
+
+body{
+    background-image: url(../img/sucursales/centralBA_bw.png);
+    width: auto;
+    height: 49em;
+}
+
+.datosPersonales{
+    display: flex;
+    width: 25%;
+    margin: auto auto auto 7%;
+    flex-direction: column;
+}
+
+.perfilContent{
+    width: 60%;
+    background-color: white;
+    margin: 6% auto;
+    height: 30em;
+}
+
+.tablas{
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.filtros{
+    background-color: #D9D9D9;
+    border: 1px solid black;
+    height: 21em;
+    border-collapse: collapse;
+}
+
+.filtros ul{
+    padding-inline-start: 1em;
+    padding-inline-end: 1em;
+    display: flex;
+    align-items: flex-end;
+    border-collapse: collapse;
+}
+
+.datos{
+    background-color: #D9D9D9;
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+
+
+  
+  td, th {
+    border: 1px solid #000;
+    padding: 9px;
+    border-collapse: collapse;
+  }
+  
+
+  th {
+    border-bottom: 1px solid #000;
+    border-collapse: collapse;
+  }
+  
+  td:first-child, th:first-child {
+    border-right: 1px solid #000;
+    border-collapse: collapse;
+  }
