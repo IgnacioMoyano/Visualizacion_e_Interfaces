@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/register2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
    
 </head>
 <body>
@@ -21,21 +22,41 @@
         <div class="Formulario">
         <form action="">
         <div class="nombreContent">
-            <label for="nombre" class="etiquetas" >Nombre ()</label>
+            <div class="nombreIconText">
+            <span class="material-symbols-outlined">
+                person
+                </span>
+            <label for="nombre" class="etiquetas" >Nombre (*)</label>
+        </div>
             <input type="text" id="nombre" name="nombre" class="entrada" placeholder="Ingrese su nombre">
         </div>
             <div class="apellidoContent">
-                <label for="apellido" class="etiquetas">Apellido ()</label>
+                <div class="apellidoIconText">
+                <span class="material-symbols-outlined">
+                    group
+                    </span>
+                <label for="apellido" class="etiquetas">Apellido (*)</label>
+            </div>
                 <input type="text" id="apellido" name="apellido" class="entrada" placeholder="Ingrese su apellido">
             </div>
             
             <div class="correoContent">
-                <label for="correo" class="etiquetas">Correo ()</label>
+                <div class="correoIconText">
+                <span class="material-symbols-outlined">
+                    mail
+                    </span>
+                <label for="correo" class="etiquetas">Correo (*)</label>
+            </div>
                 <input type="email" id="correo" name="correo" class="entrada" placeholder="Ingrese su email">
         </div>
 
         <div class="contraseniaContent">
-            <label for="contrasenia" class="etiquetas">Contraseña ()</label>
+            <div class="contraseniaIconText">
+            <span class="material-symbols-outlined">
+                key
+                </span>
+            <label for="contrasenia" class="etiquetas">Contraseña (*)</label>
+        </div>
             <input type="password" id="contrasenia" name="contrasenia" class="entrada" placeholder="Ingrese su contraseña">
         </div>
                 <div class="confirmacion"> <button class="button" id="cancelar">Cancelar</button>
