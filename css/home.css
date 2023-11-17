@@ -6,10 +6,19 @@ body {
     height: 100%;
 }
 
+header{ 
+    background-color: white;
+}
+
+footer{
+    background-color: #73122C;
+}
+
 html{
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #EEEEEE;
 }
 
 main{
@@ -169,6 +178,9 @@ width: 100%;
 
 .certificaciones{
     margin: 2% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .certificacion{
