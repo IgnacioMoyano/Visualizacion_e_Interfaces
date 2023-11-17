@@ -73,3 +73,35 @@ body {
     width: 50%;
     height: 50%;
   }
+
+  @media only screen and (max-width: 900px){
+
+    .footer{
+      display: flex;
+      flex-direction: row;
+      padding: 2% 0%;
+    }
+    
+    .footer-social{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer-logo{
+      width: 40%;
+    }
+  }
+
+  @media only screen and (max-width: 750px){
+
+    .footer{
+      display: flex;
+      flex-direction: column;
+      padding: 2% 0%;
+    }
+    
+    .footer-social{
+      display: none;
+    }
+  }
