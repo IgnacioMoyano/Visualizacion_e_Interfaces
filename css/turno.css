@@ -5,6 +5,30 @@ body {
 
      }
 
+     .fechayhora{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      width: 85%;
+    }
+
+    .radio-button {
+      display: inline-block;
+      cursor: pointer;
+      padding: 10px;
+      background-color: #3498db;
+      color: #fff;
+      border: 1px solid #3498db;
+      border-radius: 5px;
+      margin: 5px;
+  }
+
+    
+  input[type="radio"] {
+     /* display: none; */
+  }
   
   
   .titulo{
@@ -58,12 +82,19 @@ body {
     color: #13167D;;
  }
 
+ .entrada{
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ }
   
   .container_calendar {
-    width: 400px;
-    height: 40vh;
-    /*  background: salmon; */
-    margin: 5% 25%; }
+    width: 30em;
+    height: 25em;
+    margin: 5% auto; }
   
   .header_calendar {
     width: 100%;
@@ -293,3 +324,4 @@ body {
       width: 20%;
       cursor: pointer;
     }
+

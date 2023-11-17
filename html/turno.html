@@ -21,14 +21,16 @@
     <div class="seleccion">
     <label for="especialidad" class="etiqueta">Especialidad: </label>
     <select name="especialidad" id="especialidad" class="entrada">
-        <option value="dermatologia">dermatología</option>
-        <option value="pediatria">pediatría</option>
-        <option value="psiquiatria">psiquiatría</option>  
+        <option value="0" selected>-- Seleccione una especialidad --</option>
+        <option value="dermatologia">Dermatología</option>
+        <option value="pediatria">Pediatría</option>
+        <option value="psiquiatria">Psiquiatría</option>  
     </select>
 </div>
 <div class="seleccion">
-    <label for="profesional" class="etiqueta">profesional:    </label>
-    <select name="profesional" id="profesional" class="entrada">
+    <label for="profesional" class="etiqueta">Profesional:    </label>
+    <select name="profesional" id="profesional" class="entrada" disabled>
+        <option value="0" selected>-- Seleccione un Profesional --</option>
         <option value="lucas">Lucas</option>
         <option value="ignacio">Ignacio</option>
         <option value="tomas">Tomas</option>
@@ -36,8 +38,8 @@
 </div>
   </section>
         
-   
-    <div class="container_calendar">
+  <div class="fechayhora">
+    <div class="container_calendar" >
         <h3>Turnos disponibles: </h3>
         <div class="header_calendar">
             <h1 id="text_day">00</h1>
@@ -93,16 +95,26 @@
             </div>
             
         </div>
-
-        <div class="horarios">
-            <h3>horarios disponibles:</h3>
-            <button class="hora">14:30</button>
-            <button class="hora">16:45</button>
-            <button class="hora">18:00</button>
-        </div>
-        
     </div>
 
+    <div class="horarios">
+        <h3>Horarios Disponibles:</h3>
+        <label for="horario1" class="radio-button">
+            <input class="horaBoton" type="radio" id="horario1" name="horarios" value="9:00 AM">
+            9:00 AM
+        </label>
+    
+        <label for="horario2" class="radio-button">
+            <input class="horaBoton" type="radio" id="horario2" name="horarios" value="1:00 PM">
+            1:00 PM
+        </label>
+    
+        <label for="horario3" class="radio-button">
+            <input class="horaBoton" type="radio" id="horario3" name="horarios" value="4:00 PM">
+            4:00 PM
+        </label>
+    </div>
+</div>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
