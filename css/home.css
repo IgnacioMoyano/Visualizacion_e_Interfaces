@@ -157,3 +157,26 @@ width: 100%;
     align-items: center;
     flex-direction: column;
 }
+
+/* PROMOCION */
+
+.promocion img{
+    width: 100%;
+    height: auto;
+}
+
+/* CERTIFICACIONES */
+
+.certificaciones{
+    margin: 2% 0%;
+}
+
+.certificacion{
+    width: 20%;
+    height: auto;
+}
+
+.selloVerde{
+    width: 7%;
+    height: auto;
+}
