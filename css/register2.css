@@ -64,7 +64,6 @@ main form .confirmacion{
 
 main form .confirmacion .button{
     height: 5vh;
-    width: 6vw;
     cursor: pointer;
     border: none;
 }
@@ -293,4 +292,19 @@ main form #contrasenia{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-end;
+}
+
+@media only screen, (max-width: 1024px){
+    main .subtitulo {
+        font-size: 20px;
+        margin-bottom: 5rem;
+    }
+
+}
+
+@media only screen, (max-width: 320px){
+    h4 {
+     text-align: center;
+    }
+
 }
