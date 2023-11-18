@@ -378,4 +378,33 @@ body {
     width: 100%;
 }
 
+.container_calendar {
+  width: 26em;
+  height: 25em;
+  margin: 5% auto;
+}
+
+  }
+
+  @media only screen and (max-width:425px){
+    .container_calendar {
+      width: 22em;
+      height: 21em;
+      margin: 5% auto;
+  }
+  }
+
+  @media only screen and (max-width:425px){
+  .container_calendar {
+    width: 19em;
+    height: 22em;
+    margin: 5% auto;
+}
+.horarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
   }
