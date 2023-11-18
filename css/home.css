@@ -10,7 +10,7 @@ header{
     background-color: white;
 }
 
-footer{
+.footer{
     background-color: #73122C;
 }
 
@@ -192,7 +192,142 @@ width: 100%;
     height: auto;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1440px){
+
+    .contenedorMenu{
+        display: flex;
+    }
+
+    .contenedorMenu a{
+        font-size: 0.783em;
+    }
+
+    .tituloImagen{
+        position: absolute;
+        top: 27%;
+        left: 12%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    .subtituloImagen{
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.6em;
+    }
+
+    .botonSacarTurno{
+        position: absolute;
+        top: 60%;
+        left: 21%;
+        background-color: #0D7646;
+        padding: 10px 30px;
+        border-radius: 20px;
+    }
+    
+    .contenedorContacto{
+        display: flex;
+        text-align: center;
+        gap: 5%;
+        padding: 1% 0%;
+        background-color: #336675;
+        color: white;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .contenedorContacto p{
+        font-size: 0.9em;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+
+    .contenedorMenu{
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedorMenu a{
+        font-size: 0.783em;
+    }
+
+    .tituloImagen{
+        position: absolute;
+        top: 27%;
+        left: 9%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+    
+    .subtituloImagen{
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.2em;
+    }
+
+    .botonSacarTurno{
+        position: absolute;
+        top: 60%;
+        left: 18%;
+        background-color: #0D7646;
+        padding: 10px 30px;
+        border-radius: 20px;
+    }
+
+    .contenedorInformacion{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 2%;
+        column-gap: 2%;
+        row-gap: 2%;  
+        align-content: space-around;
+        justify-items: center;
+    }
+    
+    .grid-item{
+        display: flex;
+        background-color: white;
+        padding: 1%;
+        width: 10em;
+        height: 12em;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer{
+        height: 19%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    
+    .contenedorContacto{
+        display: none;
+    }
+
+    .contenedorInformacion{
+        display: none;
+    }
+
+    .footer{
+        height: 27%;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
 
     .contenedorMenu{
         display: none;
@@ -227,4 +362,16 @@ width: 100%;
         flex-direction: column;
     }
 
+    .footer{
+        height: 37%;
+    }
+
 }
+
+@media only screen and (max-width: 375px){
+
+    .footer{
+        height: 41%;
+    } 
+}
+
