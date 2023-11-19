@@ -15,6 +15,23 @@ body{
     flex-direction: column;
 }
 
+.nuevoTurno{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 4%;
+}
+
+.nuevoTurno a{
+    display: flex;
+    align-items: center;
+    height: 1em;
+    text-decoration: none;
+    color: #0D7646;
+    cursor: pointer;
+}
+
+
+
 .perfilContent{
     width: 60%;
     background-color: white;
