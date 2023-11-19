@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+
 }
 
 header {
@@ -11,6 +12,11 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 6em; 
+
+}
+
+header a {
+    text-decoration: none;
 }
 
 .logo #logoMobile{
@@ -95,6 +101,10 @@ justify-content: center;
 align-items: center;
 }
 
+.iconoLogin{
+    display: none;
+}
+
 @media only screen and (max-width:768px){
 .search-bar button.search-btn {
     width: 17%;
@@ -104,6 +114,10 @@ align-items: center;
     border: none;
     cursor: pointer;
 }
+
+.material-symbols-outlined{
+    display: none;
+    }
 }
 
 @media only screen and (max-width:425px){
@@ -148,6 +162,11 @@ display: none;
     
     }
 
+    .iconoLogin{
+        display: block;
+    }
+    
+
     .user-actions{
         width: 25%;
     display: flex;
@@ -166,6 +185,18 @@ display: none;
         
 }
 
+@media only screen and (max-width: 768px){
+.search-bar button.search-btn {
+    width: 17%;
+    margin: 0% 0% 0% -4%;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+}
+
+
 @media only screen and (max-width:425px){
 
 .search-bar input {
@@ -176,6 +207,25 @@ display: none;
     border-radius: 5px;
 }
 
+.user-actions {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+}
+
+@media only screen and (max-width: 375px){
+.search-bar button.search-btn {
+    width: 17%;
+    margin: 0% 0% 0% -2%;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 }
 
 @media only screen and (max-width:320px){
@@ -188,7 +238,24 @@ display: none;
         border: none;
         cursor: pointer;
     }
+
+
+    .user-actions {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+    }
     
+    .search-bar {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        background-color: #D9D9D9;
+        border-radius: 5px;
+    }
+
     }
 
 
