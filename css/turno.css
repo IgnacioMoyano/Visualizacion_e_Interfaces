@@ -26,6 +26,10 @@ body {
       margin: 5px;
   }
 
+  .footerAbajo{
+    margin-top: 8%;
+  }
+
     
   input[type="radio"] {
      /* display: none; */
@@ -240,6 +244,10 @@ body {
         align-items: center;
         margin: 15% 15% 15% 15%;
       }
+
+     
+
+    
 
       .finalizar .continuar{
         background-color: lightblue;

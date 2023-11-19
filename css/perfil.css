@@ -7,6 +7,10 @@ body{
     width: auto;
     height: 49em;
 }
+.footerAbajo{
+    margin-top: 8%;
+  }
+
 
 .datosPersonales{
     display: flex;

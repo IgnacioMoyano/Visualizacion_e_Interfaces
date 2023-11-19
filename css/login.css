@@ -5,6 +5,10 @@ body{
     font-family: Arial, sans-serif;
 }
 
+.footerAbajo{
+    margin-top: 8%;
+  }
+
 
 input::placeholder {
 
