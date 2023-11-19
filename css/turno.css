@@ -12,6 +12,7 @@ body {
       align-content: center;
       flex-wrap: nowrap;
       width: 85%;
+      margin: auto;
     }
 
     .radio-button {
@@ -237,7 +238,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 10rem;
+        margin: 15% 15% 15% 15%;
       }
 
       .finalizar .continuar{
@@ -325,3 +326,85 @@ body {
       cursor: pointer;
     }
 
+    @media only screen and (max-width:1024px){
+      .gestion .seleccion {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fechayhora {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      width: 95%;
+  }
+
+    }
+
+    @media only screen and (max-width:768px){
+        .fechayhora {
+          display: flex;
+          align-content: center;
+          flex-wrap: nowrap;
+          width: 100%;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 7em;
+    }
+
+    .gestion .entrada {
+      font-size: 1.05rem;
+      width: 80%;
+  }
+  }
+
+  @media only screen and (max-width:425px){
+    .gestion .seleccion {
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .gestion .entrada {
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.container_calendar {
+  width: 26em;
+  height: 25em;
+  margin: 5% auto;
+}
+
+  }
+
+  @media only screen and (max-width:425px){
+    .container_calendar {
+      width: 22em;
+      height: 21em;
+      margin: 5% auto;
+  }
+  }
+
+  @media only screen and (max-width:425px){
+  .container_calendar {
+    width: 19em;
+    height: 22em;
+    margin: 5% auto;
+}
+.horarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+  }
