@@ -6,20 +6,26 @@ body {
     height: 100%;
 }
 
+header{ 
+    background-color: white;
+}
+
+.footer{
+    background-color: #73122C;
+}
+
 html{
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: #EEEEEE;
 }
-
 
 main{
-    display: grid;
-    place-items: center;
-    color: #13167D;
-    min-height: calc(100% - 191px);
-    
+    background-color: #EEEEEE;
 }
+
+/* PARTE DEL MENU DE ARRIBA DE CARROUSEL */
 
 .contenedorMenu{
     background-color: #336675;
@@ -32,10 +38,13 @@ main{
     color: white;
 }
 
+/* CARROUSEL Y TEXTO DE IMAGEN */
+
 .contenedorCarrousel{
     position: relative;
     display: inline-block;
     text-align: center;
+    background-color: #336675;
 }
 
 .tituloImagen{
@@ -58,7 +67,7 @@ main{
 .botonSacarTurno{
     position: absolute;
     top: 60%;
-    left: 23%;
+    left: 22%;
     background-color: #0D7646;
     padding: 10px 30px;
     border-radius: 20px;
@@ -73,3 +82,342 @@ main{
 .contenedorCarrousel img{
 width: 100%;
 }
+
+/* PARTE DE CONTACTO */
+
+.contenedorContacto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 1% 0%;
+    background-color: #336675;
+    color: white;
+}
+
+
+.contenedorContacto div{
+    width: 10%;
+    height: auto;
+}
+
+/* PARTE DE LAS SUCURSALES */
+
+.contenedorSucursal {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.contenedorSucursal div{
+    width: 30%;
+    height: 50%;
+}
+
+.contenedorSucursal img{
+    width: 80%;
+    height: auto;
+}
+
+.tituloSucursal{
+    padding-left: 9%;
+    margin: 3% 0%;
+}
+
+.contenedorBotonSucursal{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 4% 0%;
+}
+
+.verTodasSucursales{
+    background-color: #0D7646;
+    padding: 1% 2%;
+    border-radius: 45px;
+    color: white;
+    font-size: 1.5em;
+}
+
+/* PARTE DE LA INFORMACION */
+
+.tituloInformacion{
+    padding-left: 9%;
+    margin: 3% 0%;
+}
+
+.contenedorInformacion{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 2%;
+    row-gap: 2%;  
+}
+
+.grid-item{
+    display: flex;
+    background-color: white;
+    padding: 1%;
+    width: 17em;
+    height: 14em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* PROMOCION */
+
+.promocion img{
+    width: 100%;
+    height: auto;
+}
+
+/* CERTIFICACIONES */
+
+.certificaciones{
+    margin: 2% 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.certificacion{
+    width: 20%;
+    height: auto;
+}
+
+.selloVerde{
+    width: 7%;
+    height: auto;
+}
+
+@media only screen and (max-width: 1440px){
+
+    .contenedorMenu{
+        display: flex;
+    }
+
+    .contenedorMenu a{
+        font-size: 0.783em;
+    }
+
+    .tituloImagen{
+        position: absolute;
+        top: 27%;
+        left: 12%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+    }
+    
+    .subtituloImagen{
+        position: absolute;
+        top: 40%;
+        left: 7%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.6em;
+    }
+
+    .botonSacarTurno{
+        position: absolute;
+        top: 60%;
+        left: 21%;
+        background-color: #0D7646;
+        padding: 10px 30px;
+        border-radius: 20px;
+    }
+    
+    .contenedorContacto{
+        display: flex;
+        text-align: center;
+        gap: 5%;
+        padding: 1% 0%;
+        background-color: #336675;
+        color: white;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .contenedorContacto p{
+        font-size: 0.9em;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+
+    .contenedorMenu{
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedorMenu a{
+        font-size: 0.783em;
+    }
+
+    .tituloImagen{
+        position: absolute;
+        top: 27%;
+        left: 9%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 1.6em;
+    }
+    
+    .subtituloImagen{
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.2em;
+    }
+
+    .botonSacarTurno{
+        position: absolute;
+        top: 60%;
+        left: 18%;
+        background-color: #0D7646;
+        padding: 10px 30px;
+        border-radius: 20px;
+    }
+
+    .contenedorInformacion{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 2%;
+        column-gap: 2%;
+        row-gap: 2%;  
+        align-content: space-around;
+        justify-items: center;
+    }
+    
+    .grid-item{
+        display: flex;
+        background-color: white;
+        padding: 1%;
+        width: 10em;
+        height: 12em;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .footer{
+        height: 19%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    
+    .contenedorMenu{
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedorMenu a{
+        font-size: 0.62em;
+    }
+
+    .tituloImagen{
+        position: absolute;
+        top: 27%;
+        left: 7%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    
+    .subtituloImagen{
+        position: absolute;
+        top: 43%;
+        left: 4%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 0.9em;
+    }
+
+    .botonSacarTurno{
+        position: absolute;
+        top: 63%;
+        left: 14%;
+        background-color: #0D7646;
+        padding: 5px 25px;
+        border-radius: 20px;
+    }
+
+    .contenedorContacto{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .contenedorContacto div{
+        width: 12em;
+        height: 11em;
+        display: flex;
+        padding: 1%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;  
+    }
+
+    .contenedorInformacion{
+        display: none;
+    }
+
+    .footer{
+        height: 27%;
+    }
+}
+
+
+@media only screen and (max-width: 650px){
+
+    .contenedorMenu{
+        display: none;
+    }
+
+    .contenedorCarrousel{
+        display: none;
+    }
+
+    .contenedorContacto{
+        display: none;
+    }
+
+    .contenedorInformacion{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 2%;
+        column-gap: 2%;
+        row-gap: 2%;  
+    }
+    
+    .grid-item{
+        display: flex;
+        background-color: white;
+        padding: 1%;
+        width: 10em;
+        height: 12em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .footer{
+        height: 37%;
+    }
+
+}
+
+@media only screen and (max-width: 375px){
+
+    .footer{
+        height: 41%;
+    } 
+}
+
