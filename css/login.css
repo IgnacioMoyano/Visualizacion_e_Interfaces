@@ -35,7 +35,7 @@ main .subtitulo{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    width: 100%;
     height: 35vh;
     gap: 1rem;
 }
@@ -47,6 +47,7 @@ main form{
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    width: 30%;
 }
 
 
@@ -58,6 +59,7 @@ main form .etiquetas{
 
 main form .confirmacion{
     display: flex;
+    margin-top: 5%;
 }
 
 
@@ -93,7 +95,7 @@ main form .documento{
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     flex-direction: row;
     align-items: center;
 }
@@ -107,10 +109,7 @@ main form .tipo{
     width: 4em;
 }
 
-.numeroDocumentoContent{
-    display: flex;
-    flex-direction: column;
-}
+
 
 main form  #tipo_documento{
     font-size: 1rem;
@@ -127,9 +126,7 @@ main form #sexo{
     width: 100%;
 }
 
-main form #tipo{
-width: 100%;
-}
+
 
 main form #numero_documento{
     padding: 0.97em;
@@ -164,6 +161,10 @@ main form #telefono{
 
     width: 90%;
 
+}
+
+.numeroDocumentoContent{
+    width: 100%;
 }
 
 .documento{
@@ -257,7 +258,7 @@ main form #correo{
     
     text-align: center;
 
-    width: 116%;
+    width: 100%;
 
 
 }
@@ -294,12 +295,20 @@ main form #contrasenia{
     align-items: flex-end;
 }
 
+.documentoIconText{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 /*Eliminar los botones del input number*/
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
 }
+
 
 
 @media only screen, (max-width: 1024px){
@@ -315,4 +324,12 @@ input[type=number]::-webkit-outer-spin-button {
      text-align: center;
     }
 
+}
+
+@media only screen and (max-width: 425px){
+.material-symbols-outlined {
+    display: block;
+    color: #13167D; 
+    
+}
 }
