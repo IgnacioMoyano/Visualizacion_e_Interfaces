@@ -24,9 +24,6 @@ input::placeholder {
     width: 300px; /* Establecer el ancho deseado */
 }
 
-.form-container div {
-    margin-bottom: 10px;
-}
 
 main{
     display: grid;
@@ -42,7 +39,7 @@ main .titulo{
 
 main .subtitulo{
     font-size: 20px;
-    margin-bottom: 4rem;
+
 } 
 
 
@@ -99,6 +96,10 @@ main form .confirmacion #continuar .enlace{
 main form .confirmacion #cancelar{
     color: #0BA3CD;
     background-color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin: 0% 5% 0% 0%;
 }
 
 main form .confirmacion #cancelar:hover{
@@ -110,7 +111,7 @@ main form .documento{
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 90%;
+    width: 116%;
     flex-direction: row;
     align-items: center;
 }
@@ -127,11 +128,12 @@ main form .tipo{
 .numeroDocumentoContent{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 main form  #tipo_documento{
     font-size: 1rem;
-    height: 2.6em;
+    height: 2.7em;
     width: 100%;
     padding: 1%
 }
@@ -161,7 +163,7 @@ main form #telefono{
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 90%;
+    width: 116%;
     flex-direction: column;
     align-items: center;
 }
@@ -170,7 +172,7 @@ main form #telefono{
     display: flex;
     text-align: center;
     justify-content: center;
-    width: 90%;
+    width:116%;
     flex-direction: column;
     align-items: center;
 }
@@ -179,7 +181,7 @@ main form #telefono{
    
     text-align: center;
 
-    width: 90%;
+    width: 116%;
 
 }
 
@@ -318,7 +320,6 @@ input[type=number]::-webkit-outer-spin-button {
 @media only screen, (max-width: 1024px){
     main .subtitulo {
         font-size: 20px;
-        margin-bottom: 5rem;
     }
 
 }
@@ -330,10 +331,37 @@ input[type=number]::-webkit-outer-spin-button {
 }
 }
 
-@media only screen, (max-width: 320px){
+@media only screen and (max-width: 320px){
     h4 {
      text-align: center;
     }
+
+.correoContent{
+    width: 100%;
+}
+.nombreContent{
+    width: 100%;
+}
+.apellidoContent{
+    width: 100%;
+}
+.contraseniaContent{
+    width: 100%;
+}
+
+.telefonoContent{
+    width: 100%;
+}
+.nacimientoContent{
+    width: 100%;
+}
+.sexoBiologicoContent{
+    width: 100%;
+}
+main form .documento{
+    width: 100%;
+}
+
 
 }
 

@@ -19,8 +19,8 @@
         <h1 class="titulo">Registro</h1>
         <h4 class="subtitulo">(*) Todos los campos son obligatorios</h4>
 
-        <div class="Formulario">
-        <form action="">
+        <div class="form-container">
+        <form id="miFormulario" action="">
         <div class="nacimientoContent">
             <div class="nacimientoIconText">
             <span class="material-symbols-outlined">
@@ -28,7 +28,8 @@
                 </span>
             <label for="fecha" class="etiquetas">Nacimiento (*)</label>
         </div>
-            <input type="date" id="fecha" name="fecha" class="entrada"  max="2023-12-31">
+            <input required type="date" id="fecha" name="fecha" class="entrada"  max="2023-12-31">
+            <span id="error_fecha" class="error-message"></span>
         </div>
             <div class="documento">
                 <div class="tipo">
@@ -42,10 +43,12 @@
             </div>
             <div class="numeroDocumentoContent">
                 <label for="numero_documento" class="etiquetas" id="tipo">Nº De Documento (*)</label>
-                <input type="number" id="numero_documento" name="numero_documento" class="entrada" placeholder="Numero de Documento">
-                </div>
+                <input required type="number" id="numero_documento" name="numero_documento" class="entrada" placeholder="Numero de Documento">
+                
             </div>
             
+            </div>
+            <span id="error_numero_documento" class="error-message"></span>    
             <div class="sexoBiologicoContent">
         <div class="sexoIconText">
             <span class="material-symbols-outlined">
@@ -59,6 +62,7 @@
                 <option value="masculino">Masculino</option>
                 <option value="otros">otro</option>
             </select>
+            <span id="error_sexo" class="error-message"></span>
         </div>
 
         <div class="telefonoContent">
@@ -68,10 +72,12 @@
                 </span>
             <label for="telefono" class="etiquetas">Telefono (*)</label>
         </div>
-            <input type="number" id="telefono" name="telefono" class="entrada" placeholder="Ingrese su telefono">
+            <input required type="number" id="telefono" name="telefono" class="entrada" placeholder="Ingrese su telefono">
+            <span id="error_telefono" class="error-message"></span>
         </div>
-            <div class="confirmacion"> <a href="register.html"><button class="button" id="cancelar">Anterior</button></a>
-            <a href="home.html"> <input type="submit" value="Finalizar" class="button" id="continuar"> </a>
+            <div class="confirmacion"> 
+                <a href="register.html" class="button" id="cancelar">Anterior</a>
+                <button value="Finalizar" class="button" id="continuar">Finalizar</button>
             </div>
            
         </form>
@@ -79,10 +85,12 @@
       
     </main>
 
-    <footer class="footer">
-        
-            <iframe src="./footer.html" frameborder="0" width="100%" height="100%"></iframe>
-        
+    <footer>
+        <div class="footer footerAbajo">
+            <iframe src="./footer.html" frameborder="0" width="100%" height="191"></iframe>
+        </div>
     </footer>
+
+    <script src="../js/register2.js"></script>
 </body>
 </html>
