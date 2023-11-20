@@ -30,6 +30,27 @@ body {
     margin-top: 8%;
   }
 
+  .week_days_item.prev_days.disabled {
+    color: #838282; /* Color gris para los días anteriores */
+    pointer-events: none; /* Desactiva los eventos de clic en días anteriores */
+}
+
+.week_days_item.selected {
+  background-color: #0D7646;
+  display: flex;
+  color: #fff;
+  /* position: inherit; */
+  font-weight: bold;
+  /* background: lightblue; */
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin: 0% 4% 0% 4%;
+  /* text-align: center; */
+  align-items: center;
+}
+
+
     
   input[type="radio"] {
      /* display: none; */
@@ -96,6 +117,11 @@ body {
   box-sizing: border-box;
  }
   
+ .container_days .today {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
   .container_calendar {
     width: 30em;
     height: 25em;
@@ -206,7 +232,7 @@ body {
     cursor: pointer; }
   
   .week_days_item:hover {
-    color: #506CF5; }
+    color: #ffffff; }
   
   .prev_days {
     opacity: 0.5; }
@@ -228,15 +254,7 @@ body {
     .container_days .today {
       display: flex; }
     .container_days .today:after {
-      content: "";
-      width: 19px;
-      height: 19px;
-      background: #506CF5;
-      position: absolute;
-      border-radius: 50%;
-      border: 5px solid #506CF5;
-      opacity: 0.6;
-      margin: -5px 0px 0px 1px; }
+      }
 
       .finalizar{
         display: flex;
