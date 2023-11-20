@@ -1,32 +1,31 @@
-header {
+header{
     background-color: white;
 }
 
-body {
+body{
     background-image: url(../img/sucursales/centralBA_bw.png);
     width: auto;
     height: 49em;
 }
-
-.footerAbajo {
+.footerAbajo{
     margin-top: 8%;
-}
+  }
 
 
-.datosPersonales {
+.datosPersonales{
     display: flex;
     width: 25%;
     margin: auto auto auto 7%;
     flex-direction: column;
 }
 
-.nuevoTurno {
+.nuevoTurno{
     display: flex;
     flex-direction: row-reverse;
     margin-right: 4%;
 }
 
-.nuevoTurno a {
+.nuevoTurno a{
     display: flex;
     align-items: center;
     height: 1em;
@@ -37,28 +36,28 @@ body {
 
 
 
-.perfilContent {
+.perfilContent{
     width: 60%;
     background-color: white;
     margin: 6% auto;
     height: 30em;
 }
 
-.tablas {
+.tablas{
     display: flex;
     list-style: none;
     flex-wrap: nowrap;
     justify-content: center;
 }
 
-.filtros {
+.filtros{
     background-color: #D9D9D9;
     border: 1px solid black;
     height: 21em;
     border-collapse: collapse;
 }
 
-.filtros ul {
+.filtros ul{
     padding-inline-start: 1em;
     padding-inline-end: 1em;
     display: flex;
@@ -66,7 +65,7 @@ body {
     border-collapse: collapse;
 }
 
-.datos {
+.datos{
     background-color: #D9D9D9;
     border: 1px solid #000;
     border-collapse: collapse;
@@ -74,28 +73,26 @@ body {
 
 
 
-
-td,
-th {
+  
+  td, th {
     border: 1px solid #000;
     padding: 9px;
     border-collapse: collapse;
-}
+  }
+  
 
-
-th {
+  th {
     border-bottom: 1px solid #000;
     border-collapse: collapse;
-}
-
-td:first-child,
-th:first-child {
+  }
+  
+  td:first-child, th:first-child {
     border-right: 1px solid #000;
     border-collapse: collapse;
-}
+  }
 
 
-@media only screen and (max-width: 1440px) {
+  @media only screen and (max-width: 1440px){
     .tablas {
         margin: auto;
         width: 100%;
@@ -105,20 +102,15 @@ th:first-child {
         justify-content: center;
         font-size: 1.3em;
     }
-
     .filtros {
         background-color: #D9D9D9;
         border: 1px solid black;
         height: 15em;
         border-collapse: collapse;
     }
-
-    .footer {
-        height: 18%;
-    }
 }
 
-@media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1024px){
     .tablas {
         margin: auto;
         width: 1%;
@@ -128,13 +120,9 @@ th:first-child {
         justify-content: center;
         font-size: 1.1em;
     }
-
-    .footer {
-        height: 21%;
-    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px){
 
     .tablas {
         margin: auto;
@@ -152,112 +140,68 @@ th:first-child {
         height: 25em;
         border-collapse: collapse;
     }
-
-    .footer {
-        height: 29%;
-    }
 }
 
-@media only screen and (max-width: 425px) {
-    body {
+@media only screen and (max-width: 425px){
+    body{
         background-color: white;
         background-image: none;
     }
-
-    .perfilContent {
-        width: 100%;
-        background-color: white;
-        margin: 6% auto;
-        height: 30em;
-    }
-
-    .datosPersonales {
-        margin: 7% auto auto 7%;
-    }
-
-    .tablas {
-        margin: auto;
-        width: 100%;
-        display: flex;
-        list-style: none;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 0.6em;
-        flex-direction: column;
-        /* align-content: center; */
-        /* text-align: center; */
-    }
-
-    .filtros {
-        background-color: #D9D9D9;
-        border: 1px solid black;
-        height: 4em;
-        /* width: 100%; */
-        border-collapse: collapse;
-    }
-
-    li {
-        display: flex;
-    }
-
-    .datos {
-        text-align: center;
-        height: 29em;
-        background-color: #D9D9D9;
-        border: 1px solid #000;
-        border-collapse: collapse;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-    }
-
+    
+        .perfilContent {
+            width: 100%;
+            background-color: white;
+            margin: 6% auto;
+            height: 30em;
+        }
+    
+        .datosPersonales {
+            width: 100%;
+            margin: 7% auto auto 7%;
+        }
+    
+        .tablas {
+            margin: auto;
+            width: 100%;
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 0.6em;
+            flex-direction: column;
+            /* align-content: center; */
+            /* text-align: center; */
+        }
+        .filtros {
+            background-color: #D9D9D9;
+            border: 1px solid black;
+            height: 4em;
+            /* width: 100%; */
+            border-collapse: collapse;
+        }
+    
+        li{
+            display: flex;
+        }
+        
+        .datos {
+            text-align: center;
+            height: 29em;
+            background-color: #D9D9D9;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }    
+    
     .material-symbols-outlined {
         font-size: 1.5em;
     }
-
-    table {
+    
+    table{
         width: 100%;
     }
-
-    .footer {
-        height: 40%;
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .footer {
-        height: 42%;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    .footer {
-        height: 44%;
+    
     }
 
-    .material-symbols-outlined {
-        font-size: 1em;
-    }
-
-    .filtros {
-        background-color: #D9D9D9;
-        border: 1px solid black;
-        height: 4em;
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    .tablas {
-        margin: auto;
-        width: 100%;
-        display: flex;
-        list-style: none;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 0.5em;
-        flex-direction: column;
-        /* align-content: center; */
-        /* text-align: center; */
-    }
-
-}
