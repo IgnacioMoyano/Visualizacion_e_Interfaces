@@ -27,7 +27,15 @@ main {
 
 /* PARTE DEL MENU DE ARRIBA DE CARROUSEL */
 
-.cont-menu{
+.icono-menu {
+   display: none;
+}
+
+.icono-menu img {
+   display: none
+}
+
+.cont-menu {
     display: none;
 }
 
@@ -505,7 +513,7 @@ main {
         text-align: center;
     }
 
-    .contenedorInformacion{
+    .contenedorInformacion {
         margin-bottom: 15%;
     }
 
@@ -513,11 +521,11 @@ main {
         display: none;
     }
 
-    .cont-menu{
-        display: block ;
-        background-color: rgb(42,42,42);
-        box-shadow: 2px 0px 5px 2px rgb(66,66,66);
-        width: 400px;
+    .cont-menu {
+        display: block;
+        background-color: rgb(42, 42, 42);
+        box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+        width: 100%;
         height: 100vh;
         position: absolute;
         top: 0;
@@ -525,19 +533,26 @@ main {
         transition: all .5s ease;
         z-index: 9;
     }
-    
+
+    section {
+        background-color: #336675;
+        padding: 1% 2%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
     /* Estilos por agregar en JavaScript */
-    .active{
+    .active {
         transform: translate(-600px);
     }
-    
+
     /* Estilos para el listado del Menú */
-    .cont-menu ul{
+    .cont-menu ul {
         padding: 100px 0px 20px 0px;
         list-style: none;
     }
-    
-    .cont-menu ul li{
+
+    .cont-menu ul li {
         color: white;
         display: block;
         font-size: 25px;
@@ -545,19 +560,20 @@ main {
         padding: 10px 50px;
         cursor: pointer;
     }
-    
-    .cont-menu ul li:hover{
-        background-color: rgb(228,228,228);
-        color: rgb(42,42,42);
+
+    .cont-menu ul li:hover {
+        background-color: rgb(228, 228, 228);
+        color: rgb(42, 42, 42);
     }
 
-    .icono-menu{ 
-        margin: 40px 50px;
+    .icono-menu {
+        display: block;
         position: relative;
         z-index: 10;
     }
-    
-    .icono-menu img{
+
+    .icono-menu img {
+        display: block;
         vertical-align: top;
         width: 40px;
         cursor: pointer;
@@ -570,7 +586,35 @@ main {
 
 @media only screen and (max-width: 375px) {
 
-    .footer {
-        height: 41%;
+    .contenedorInformacion {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+        text-align: center;
+        margin: 2%;
+        column-gap: 2%;
+        row-gap: 2%;
+    }
+
+    .grid-item {
+        display: flex;
+        background-color: white;
+        padding: 1%;
+        width: 9em;
+        height: 12em;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section {
+        background-color: #336675;
+        padding: 1% 2%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .contenedorInformacion {
+        margin-bottom: 15%;
     }
 }
