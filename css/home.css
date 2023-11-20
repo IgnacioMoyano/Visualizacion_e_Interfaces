@@ -10,10 +10,6 @@ header {
     background-color: white;
 }
 
-.footer {
-    background-color: #73122C;
-}
-
 html {
     height: 100%;
     margin: 0;
@@ -28,11 +24,11 @@ main {
 /* PARTE DEL MENU DE ARRIBA DE CARROUSEL */
 
 .icono-menu {
-   display: none;
+    display: none;
 }
 
 .icono-menu img {
-   display: none
+    display: none
 }
 
 .cont-menu {
@@ -83,6 +79,7 @@ main {
     background-color: #0D7646;
     padding: 10px 30px;
     border-radius: 20px;
+    border: none;
 }
 
 .botonSacarTurno a {
@@ -149,6 +146,7 @@ main {
     border-radius: 45px;
     color: white;
     font-size: 1.5em;
+    border: none;
 }
 
 /* PARTE DE LA INFORMACION */
@@ -238,6 +236,7 @@ main {
         background-color: #0D7646;
         padding: 10px 30px;
         border-radius: 20px;
+        border: none;
     }
 
     .contenedorContacto {
@@ -255,10 +254,6 @@ main {
     .contenedorContacto p {
         font-size: 0.9em;
     }
-
-}
-
-@media only screen and (max-width: 1440px) {
 
     .contenedorInformacion {
         display: grid;
@@ -345,6 +340,7 @@ main {
         background-color: #0D7646;
         padding: 10px 30px;
         border-radius: 20px;
+        border: none;
     }
 
     .contenedorInformacion {
@@ -410,6 +406,7 @@ main {
         background-color: #0D7646;
         padding: 5px 25px;
         border-radius: 20px;
+        border: none;
     }
 
     .contenedorContacto {
@@ -510,6 +507,7 @@ main {
         padding: 5px 25px;
         border-radius: 20px;
         margin: 4% 0%;
+        border: none;
     }
 
     .tituloInformacion {
@@ -586,7 +584,6 @@ main {
 
     .icono-menu img {
         display: block;
-        vertical-align: top;
         width: 40px;
         cursor: pointer;
     }
