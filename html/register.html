@@ -20,7 +20,7 @@
         <h4 class="subtitulo">(*) Todos los campos son obligatorios</h4>
 
         <div class="Formulario">
-        <form action="">
+        <form id="miFormulario" action="">
         <div class="nombreContent">
             <div class="nombreIconText">
             <span class="material-symbols-outlined">
@@ -59,15 +59,19 @@
         </div>
             <input type="password" id="contrasenia" name="contrasenia" class="entrada" placeholder="Ingrese su contraseña">
         </div>
-                <div class="confirmacion"> <button class="button" id="cancelar">Cancelar</button>
-                <input type="submit" value="Continuar" class="button" id="continuar">
+                <div class="confirmacion"> <a href="home.html"><button class="button" id="cancelar">Cancelar</button></a>
+               <input type="submit" value="Continuar" class="button" id="continuar" >
                 </div>
         </form>
         </div>
       
     </main>
     <footer>
-        <iframe src="./footer.html" frameborder="0" width="100%" height="100%"></iframe>
+        <div class="footer footerAbajo">
+            <iframe src="./footer.html" frameborder="0" width="100%" height="191"></iframe>
+        </div>
     </footer>
+
+    <script src="../js/register.js"></script>
 </body>
 </html>

@@ -2,16 +2,26 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+
 }
 
 header {
+    padding: 0% 2% 0% 2%;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 6em; 
+
 }
 
+header a {
+    text-decoration: none;
+}
+
+.logo #logoMobile{
+    display: none;
+}
 
 .logo{
     max-width: 25%;
@@ -21,9 +31,26 @@ header {
     max-width: 100%;
 }
 
+
 .buscador{
    background-color: #D9D9D9;
 }
+
+.material-symbols-outlined{
+    display: none;
+    }
+
+    .loginIcon{
+        display: none;
+    }
+
+.register-btn{
+display: block;
+    }
+
+    .login-btn{
+display: block;
+    }
 
 .search-bar {
     display: flex;
@@ -42,6 +69,9 @@ header {
 }
 
 .search-bar button.search-btn {
+    width: 10%;
+    margin: 0% 0% 0% 0%;
+    display: flex;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -64,3 +94,168 @@ header {
     background-color: #0D7646; 
     color: white;
 }
+
+.user-actions{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.iconoLogin{
+    display: none;
+}
+
+@media only screen and (max-width:768px){
+.search-bar button.search-btn {
+    width: 17%;
+    margin: 0% 0% 0% 0%;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.material-symbols-outlined{
+    display: none;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .search-bar {
+        display: flex;
+        align-items: center;
+         width: 55%; 
+        background-color: #D9D9D9;
+        border-radius: 5px;
+    }
+
+    .logo img {
+        max-width: 100%;
+    }
+
+    element.style {
+        display: flex;
+    }
+
+    .user-actions button {
+        display: none;
+        margin-left: 1em;
+        padding: 0.5em 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .logo #logoPC{
+display: none;
+    }
+
+    .logo #logoMobile {
+        display: block;
+        width: 40%;
+        margin: auto;
+    }
+
+    .material-symbols-outlined{
+    display: block;
+    color: black;
+    
+    }
+
+    .iconoLogin{
+        display: block;
+    }
+    
+
+    .user-actions{
+        width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.register-btn{
+    display: none;
+        }
+        
+    .login-btn{
+    display: none;
+    }
+        
+}
+
+@media only screen and (max-width: 768px){
+.search-bar button.search-btn {
+    width: 17%;
+    margin: 0% 0% 0% -4%;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+}
+
+
+@media only screen and (max-width:425px){
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 0.5em;
+    margin-right: -1.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.user-actions {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+}
+
+@media only screen and (max-width: 375px){
+.search-bar button.search-btn {
+    width: 17%;
+    margin: 0% 0% 0% -2%;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+}
+
+@media only screen and (max-width:320px){
+
+    .search-bar button.search-btn {
+        width: 100%;
+        margin: 0% 0% 0% -7%;
+        display: flex;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .user-actions {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+    }
+    
+    .search-bar {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        background-color: #D9D9D9;
+        border-radius: 5px;
+    }
+
+    }
+
+
