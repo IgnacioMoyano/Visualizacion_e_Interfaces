@@ -4,7 +4,9 @@ body{
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
+.footerAbajo{
+    margin-top: 8%;
+  }
 
 
 input::placeholder {
@@ -173,6 +175,9 @@ main form #telefono{
     width: 90%;
 }
 
+
+
+
 .entrada{
     width: 45%;
   padding: 12px 20px;
@@ -297,33 +302,25 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
-/*@media only screen (max-width: 1024px){
+@media only screen, (max-width: 1024px){
     main .subtitulo {
         font-size: 20px;
         margin-bottom: 5rem;
     }
 
-}*/
+}
 
-@media  (min-width: 425px) and (max-width:768px){
+@media only screen and (max-width: 425px){
 .material-symbols-outlined {
     display: block;
     color: #13167D;
 }
-
-
 }
 
-@media  (min-width: 320px) and (max-width:425px){
-    main .subtitulo {
+@media only screen, (max-width: 320px){
+    h4 {
      text-align: center;
-     font-size: 18px;
-    }
-
-    .footer{
-        height: 35vh;
     }
 
 }
-
 
