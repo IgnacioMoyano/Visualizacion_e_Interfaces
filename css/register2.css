@@ -75,6 +75,7 @@ main form .confirmacion .button{
 main form .confirmacion #continuar{
     background-color: #0D7646;
     color: white;
+    border-radius: 5px;
 }
 
 main form .confirmacion #continuar .enlace{

@@ -40,35 +40,35 @@ function initCalender(){
         }
     }
 
-    for (let i = 1; i <= getTotalDays(month); i++) {
-        const dayElement = document.createElement("span");
-        dayElement.className = "week_days_item item_day";
-        dayElement.textContent = i;
-        dayElement.id = "day_" + i;
-    
-        // Verifica si el día es anterior al día actual
-        if (year < now.getFullYear() || (year === now.getFullYear() && (month < now.getMonth() || (month === now.getMonth() && i < day)))) {
-            dayElement.classList.add("prev_days", "disabled");
-        } else {
-            dayElement.addEventListener("click", function () {
-                // Solo maneja el clic si el día no es anterior a la fecha de hoy
-                if (i >= day || month > currentMonth) {
-                    handleDayClick(i);
-                }
-            });
-        }
-    
-        // Resalta el día seleccionado
-        if (i === selectedDay && month === currentMonth) {
-            dayElement.classList.add("selected");
-        }
-    
-        // Resalta el día actual
-        if (i === day && month === currentMonth) {
-            dayElement.classList.add("today");
-        }
-    
-        $(".container_days").append(dayElement);
+ for (let i = 1; i <= getTotalDays(month); i++) {
+    const dayElement = document.createElement("span");
+    dayElement.className = "week_days_item item_day";
+    dayElement.textContent = i;
+    dayElement.id = "day_" + i;
+
+    // Verifica si el día es anterior al día actual
+    if (year < now.getFullYear() || (year === now.getFullYear() && (month < now.getMonth() || (month === now.getMonth() && i < day)))) {
+        dayElement.classList.add("prev_days", "disabled");
+    } else {
+        dayElement.addEventListener("click", function () {
+            // Solo maneja el clic si el día no es anterior a la fecha de hoy
+            if (i >= day || month > currentMonth) {
+                handleDayClick(i);
+            }
+        });
+    }
+
+    // Resalta el día seleccionado
+    if (i === selectedDay && month === currentMonth) {
+        dayElement.classList.add("selected");
+    }
+
+    // Resalta el día actual
+    if (i === day && month === currentMonth) {
+        dayElement.classList.add("today");
+    }
+
+    $(".container_days").append(dayElement);
     }
 }
 
