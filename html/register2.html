@@ -28,7 +28,7 @@
                 </span>
             <label for="fecha" class="etiquetas">Nacimiento (*)</label>
         </div>
-            <input required type="date" id="fecha" name="fecha" class="entrada"  max="2023-12-31">
+            <input type="date" id="fecha" name="fecha" class="entrada"  max="2023-12-31">
         </div>
             <div class="documento">
                 <div class="tipo">
@@ -42,7 +42,7 @@
             </div>
             <div class="numeroDocumentoContent">
                 <label for="numero_documento" class="etiquetas" id="tipo">Nº De Documento (*)</label>
-                <input required type="number" id="numero_documento" name="numero_documento" class="entrada" placeholder="Numero de Documento">
+                <input type="number" id="numero_documento" name="numero_documento" class="entrada" placeholder="Numero de Documento">
                 </div>
             </div>
             
@@ -68,11 +68,10 @@
                 </span>
             <label for="telefono" class="etiquetas">Telefono (*)</label>
         </div>
-            <input required type="number" id="telefono" name="telefono" class="entrada" placeholder="Ingrese su telefono">
+            <input type="number" id="telefono" name="telefono" class="entrada" placeholder="Ingrese su telefono">
         </div>
-            <div class="confirmacion"> 
-                <a href="register.html"><input type="button" value="Anterior" class="button" id="cancelar"></a>
-            <a href="home.html"> <input type="button" value="Finalizar" class="button" id="continuar"> </a>
+            <div class="confirmacion"> <a href="register.html"><button class="button" id="cancelar">Anterior</button></a>
+            <a href="home.html"> <input type="submit" value="Finalizar" class="button" id="continuar"> </a>
             </div>
            
         </form>
