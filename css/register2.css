@@ -14,6 +14,19 @@ input::placeholder {
     font-size: 11px;
 }
 
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-container {
+    width: 300px; /* Establecer el ancho deseado */
+}
+
+.form-container div {
+    margin-bottom: 10px;
+}
 
 main{
     display: grid;
