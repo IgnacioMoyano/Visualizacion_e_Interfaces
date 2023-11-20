@@ -1,13 +1,10 @@
-body {
+body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-.footerAbajo {
-    margin-top: 8%;
-}
 
 
 input::placeholder {
@@ -16,7 +13,7 @@ input::placeholder {
 }
 
 
-main {
+main{
     display: grid;
     place-items: center;
     color: #13167D;
@@ -24,17 +21,17 @@ main {
 
 
 
-main .titulo {
+main .titulo{
     font-size: 40px;
 }
 
-main .subtitulo {
+main .subtitulo{
     font-size: 20px;
     margin-bottom: 4rem;
-}
+} 
 
 
-.Formulario {
+.Formulario{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +41,7 @@ main .subtitulo {
     gap: 1rem;
 }
 
-main form {
+main form{
     text-align: center;
     justify-content: center;
     display: flex;
@@ -54,47 +51,47 @@ main form {
 }
 
 
-main form .etiquetas {
+main form .etiquetas{
     font-size: 18px;
 }
 
 
 
-main form .confirmacion {
+main form .confirmacion{
     display: flex;
 }
 
 
 
-main form .confirmacion .button {
+main form .confirmacion .button{
     height: 5vh;
     cursor: pointer;
     border: none;
 }
 
 
-main form .confirmacion #continuar {
+main form .confirmacion #continuar{
     background-color: #0D7646;
     color: white;
     border-radius: 5px;
 }
 
-main form .confirmacion #continuar .enlace {
+main form .confirmacion #continuar .enlace{
     text-decoration: none;
     color: white;
 }
 
-main form .confirmacion #cancelar {
+main form .confirmacion #cancelar{
     color: #0BA3CD;
     background-color: white;
 }
 
-main form .confirmacion #cancelar:hover {
+main form .confirmacion #cancelar:hover{
     background-color: rgb(207, 200, 200);
 }
 
 
-main form .documento {
+main form .documento{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -103,49 +100,49 @@ main form .documento {
     align-items: center;
 }
 
-main form .documento .tipo {
+main form .documento .tipo{
     display: flex;
     flex-direction: column;
 }
 
-main form .tipo {
+main form .tipo{
     width: 4em;
 }
 
-.numeroDocumentoContent {
+.numeroDocumentoContent{
     display: flex;
     flex-direction: column;
 }
 
-main form #tipo_documento {
+main form  #tipo_documento{
     font-size: 1rem;
     height: 2.6em;
     width: 100%;
     padding: 1%
 }
 
-main form #fecha {
+main form #fecha{
     width: 100%;
 }
 
-main form #sexo {
+main form #sexo{
     width: 100%;
 }
 
-main form #tipo {
-    width: 100%;
+main form #tipo{
+width: 100%;
 }
 
-main form #numero_documento {
+main form #numero_documento{
     padding: 0.97em;
     width: 100%;
 }
 
-main form #telefono {
+main form #telefono{
     width: 100%;
 }
 
-.sexoBiologicoContent {
+.sexoBiologicoContent{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -154,7 +151,7 @@ main form #telefono {
     align-items: center;
 }
 
-.nacimientoContent {
+.nacimientoContent{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -163,43 +160,43 @@ main form #telefono {
     align-items: center;
 }
 
-.telefonoContent {
-
+.telefonoContent{
+   
     text-align: center;
 
     width: 90%;
 
 }
 
-.documento {
+.documento{
     text-align: center;
     width: 90%;
 }
 
-.entrada {
+.entrada{
     width: 45%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.nacimientoIconText {
+.nacimientoIconText{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-end;
 }
 
-.sexoIconText {
+.sexoIconText{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-end;
 }
 
-.telefonoIconText {
+.telefonoIconText{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -208,9 +205,9 @@ main form #telefono {
 
 
 
-.nombreContent {
-
-
+.nombreContent{
+   
+   
     text-align: center;
 
     width: 116%;
@@ -218,13 +215,13 @@ main form #telefono {
 
 }
 
-main form #nombre {
+main form #nombre{
     width: 100%;
 }
 
-.apellidoContent {
-
-
+.apellidoContent{
+   
+   
     text-align: center;
 
     width: 116%;
@@ -232,13 +229,13 @@ main form #nombre {
 
 }
 
-main form #apellido {
+main form #apellido{
     width: 100%;
 }
 
-.correoContent {
-
-
+.correoContent{
+   
+   
     text-align: center;
 
     width: 116%;
@@ -246,13 +243,13 @@ main form #apellido {
 
 }
 
-main form #correo {
+main form #correo{
     width: 100%;
 }
 
-.contraseniaContent {
-
-
+.contraseniaContent{
+   
+    
     text-align: center;
 
     width: 116%;
@@ -260,32 +257,32 @@ main form #correo {
 
 }
 
-main form #contrasenia {
+main form #contrasenia{
     width: 100%;
 }
 
-.apellidoIconText {
+.apellidoIconText{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-end;
 }
 
-.correoIconText {
+.correoIconText{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-end;
 }
 
-.contraseniaIconText {
+.contraseniaIconText{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-end;
 }
 
-.nombreIconText {
+.nombreIconText{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
@@ -293,33 +290,40 @@ main form #contrasenia {
 }
 
 /*Eliminar los botones del input number*/
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 
-@media only screen,
-(max-width: 1024px) {
+/*@media only screen (max-width: 1024px){
     main .subtitulo {
         font-size: 20px;
         margin-bottom: 5rem;
     }
 
+}*/
+
+@media  (min-width: 425px) and (max-width:768px){
+.material-symbols-outlined {
+    display: block;
+    color: #13167D;
 }
 
-@media only screen and (max-width: 425px) {
-    .material-symbols-outlined {
-        display: block;
-        color: #13167D;
+
+}
+
+@media  (min-width: 320px) and (max-width:425px){
+    main .subtitulo {
+     text-align: center;
+     font-size: 18px;
     }
-}
 
-@media only screen,
-(max-width: 320px) {
-    h4 {
-        text-align: center;
+    .footer{
+        height: 35vh;
     }
 
 }
+
+
