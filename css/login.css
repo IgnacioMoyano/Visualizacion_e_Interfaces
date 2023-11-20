@@ -42,6 +42,7 @@ main .subtitulo{
     width: 100%;
     height: 35vh;
     gap: 1rem;
+    margin-bottom: 4.76rem;
 }
 
 main form{
@@ -177,9 +178,9 @@ main form #telefono{
 }
 
 
-footer{
-    margin-top: 7rem;
-    height: 200px;
+.footer{
+    margin-top: 9.9rem;
+    height: 20vh;
     width: 100%;
 }
 
@@ -314,26 +315,66 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 
+@media (min-width:1025px) and (max-width:1441px){
+    
+    .Formulario{
+        margin-bottom: 9rem;
+    }
 
-@media only screen, (max-width: 1024px){
+    .footer{
+        height: 20vh; 
+        margin-top:9.2rem;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width:1024px){
     main .subtitulo {
         font-size: 20px;
         margin-bottom: 5rem;
     }
 
+
+    .Formulario{
+        margin-bottom: 7.1rem;
+    }
+
+    .footer{
+        height: 25vh; 
+        margin-top:7.8rem;
+    }
 }
 
-@media only screen, (max-width: 320px){
+
+@media  (min-width: 320px) and (max-width: 425px){
     h4 {
      text-align: center;
     }
 
+    .Formulario{
+        margin-bottom: 1.7rem;
+    }
+
+    .footer{
+        height: 33vh; 
+        margin-top: 6.95rem;
+    }
 }
 
-@media only screen and (max-width: 425px){
+@media(min-width: 425px) and (max-width:768px){
 .material-symbols-outlined {
     display: block;
     color: #13167D; 
     
 }
+
+.Formulario{
+    margin-bottom: 5.4rem;
+}
+
+.footer{
+    height: 30vh; 
+    margin-top: 5rem;
+}
+
 }
