@@ -24,6 +24,12 @@ function validarFormulario() {
         validacionCorrecta = false;
     }
 
+    // Validar apellido
+    if (apellido === '') {
+        mostrarError('errorApellido', 'El campo Apellido es obligatorio.');
+        validacionCorrecta = false;
+    }
+
     // Validar el formato del correo electrónico
     var regexEmail = /^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,}$/;
     if (!regexEmail.test(correo)) {
