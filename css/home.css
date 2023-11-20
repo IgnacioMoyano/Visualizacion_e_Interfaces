@@ -24,11 +24,11 @@ main {
 /* PARTE DEL MENU DE ARRIBA DE CARROUSEL */
 
 .icono-menu {
-   display: none;
+    display: none;
 }
 
 .icono-menu img {
-   display: none
+    display: none
 }
 
 .cont-menu {
