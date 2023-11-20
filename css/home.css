@@ -10,10 +10,6 @@ header {
     background-color: white;
 }
 
-.footer {
-    background-color: #73122C;
-}
-
 html {
     height: 100%;
     margin: 0;
@@ -255,10 +251,6 @@ main {
     .contenedorContacto p {
         font-size: 0.9em;
     }
-
-}
-
-@media only screen and (max-width: 1440px) {
 
     .contenedorInformacion {
         display: grid;
@@ -574,7 +566,6 @@ main {
 
     .icono-menu img {
         display: block;
-        vertical-align: top;
         width: 40px;
         cursor: pointer;
     }
