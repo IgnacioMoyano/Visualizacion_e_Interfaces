@@ -28,7 +28,7 @@
                 </span>
             <label for="nombre" class="etiquetas" >Nombre (*)</label>
         </div>
-            <input type="text" id="nombre" name="nombre" class="entrada" placeholder="Ingrese su nombre">
+            <input required type="text" id="nombre" name="nombre" class="entrada" placeholder="Ingrese su nombre">
         </div>
             <div class="apellidoContent">
                 <div class="apellidoIconText">
@@ -37,7 +37,7 @@
                     </span>
                 <label for="apellido" class="etiquetas">Apellido (*)</label>
             </div>
-                <input type="text" id="apellido" name="apellido" class="entrada" placeholder="Ingrese su apellido">
+                <input required type="text" id="apellido" name="apellido" class="entrada" placeholder="Ingrese su apellido">
             </div>
             
             <div class="correoContent">
@@ -47,7 +47,7 @@
                     </span>
                 <label for="correo" class="etiquetas">Correo (*)</label>
             </div>
-                <input type="email" id="correo" name="correo" class="entrada" placeholder="Ingrese su email">
+                <input required type="email" id="correo" name="correo" class="entrada" placeholder="Ingrese su email">
         </div>
 
         <div class="contraseniaContent">
@@ -57,10 +57,12 @@
                 </span>
             <label for="contrasenia" class="etiquetas">Contraseña (*)</label>
         </div>
-            <input type="password" id="contrasenia" name="contrasenia" class="entrada" placeholder="Ingrese su contraseña">
+            <input  required type="password" id="contrasenia" name="contrasenia" class="entrada" placeholder="Ingrese su contraseña">
         </div>
-                <div class="confirmacion"> <a href="home.html"><button class="button" id="cancelar">Cancelar</button></a>
-               <input type="submit" value="Continuar" class="button" id="continuar" >
+        
+                <div class="confirmacion"> 
+              <a href="home.html">Cancelar</a>
+            <button value="Continuar" class="button" id="continuar">Continuar</button>
                 </div>
         </form>
         </div>
