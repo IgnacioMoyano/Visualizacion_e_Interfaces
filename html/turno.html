@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/turno.css">
 </head>
+
 <body>
 
     <header>
@@ -17,127 +19,128 @@
 
     <h1 class="titulo">Gestionar nuevo turno:</h1>
 
-  <section class="gestion">
-    <div class="seleccion">
-    <label for="especialidad" class="etiqueta">Especialidad: </label>
-    <select name="especialidad" id="especialidad" class="entrada">
-        <option value="0" selected>-- Seleccione una especialidad --</option>
-        <option value="dermatologia">Dermatología</option>
-        <option value="pediatria">Pediatría</option>
-        <option value="psiquiatria">Psiquiatría</option>  
-    </select>
-</div>
-<div class="seleccion">
-    <label for="profesional" class="etiqueta">Profesional:    </label>
-    <select name="profesional" id="profesional" class="entrada" disabled>
-        <option value="0" selected>-- Seleccione un Profesional --</option>
-        <option value="lucas">Lucas</option>
-        <option value="ignacio">Ignacio</option>
-        <option value="tomas">Tomas</option>
-    </select>
-</div>
-  </section>
-        
-  <div class="fechayhora">
-    <div class="container_calendar" >
-        <h3>Turnos disponibles: </h3>
-        <div class="header_calendar">
-            <h1 id="text_day">00</h1>
-            <h5 id="text_month">Null</h5>
+    <section class="gestion">
+        <div class="seleccion">
+            <label for="especialidad" class="etiqueta">Especialidad: </label>
+            <select name="especialidad" id="especialidad" class="entrada">
+                <option value="0" selected>-- Seleccione una especialidad --</option>
+                <option value="dermatologia">Dermatología</option>
+                <option value="pediatria">Pediatría</option>
+                <option value="psiquiatria">Psiquiatría</option>
+            </select>
         </div>
-        <div class="body_calendar">
-            <div class="container_details">
-                <div class="detail_1">
-                    <div class="detail">
-                        <div class="circle">
-                            <div class="column"></div>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div class="circle">
-                            <div class="column"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="detail_2">
-                    <div class="detail">
-                        <div class="circle">
-                            <div class="column"></div>
-                        </div>
-                    </div>
-                    <div class="detail">
-                        <div class="circle">
-                            <div class="column"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container_change_month">
-                <button id="last_month">&lt;</button>
-                <div>
-                    <span id="text_month_02">Null</span>
-                    <span id="text_year">0000</span>
-                </div>
-                <button id="next_month">&gt;</button>
-            </div>
-            <div class="container_weedays">
-                <span class="week_days_item">DOM</span>
-                <span class="week_days_item">LUN</span>
-                <span class="week_days_item">MAR</span>
-                <span class="week_days_item">MÍE</span>
-                <span class="week_days_item">JUE</span>
-                <span class="week_days_item">VIE</span>
-                <span class="week_days_item">SÁB</span>
-            </div>
-            <div class="container_days">
-                <span class="week_days_item item_day"></span>
-                
-            </div>
-            
+        <div class="seleccion">
+            <label for="profesional" class="etiqueta">Profesional: </label>
+            <select name="profesional" id="profesional" class="entrada" disabled>
+                <option value="0" selected>-- Seleccione un Profesional --</option>
+                <option value="lucas">Lucas</option>
+                <option value="ignacio">Ignacio</option>
+                <option value="tomas">Tomas</option>
+            </select>
         </div>
-    </div>
+    </section>
 
-    <div class="horarios">
-        <h3>Horarios Disponibles:</h3>
-        <label for="horario1" class="radio-button">
-            <input class="horaBoton" type="radio" id="horario1" name="horarios" value="9:00 AM">
-            9:00 AM
-        </label>
-    
-        <label for="horario2" class="radio-button">
-            <input class="horaBoton" type="radio" id="horario2" name="horarios" value="1:00 PM">
-            1:00 PM
-        </label>
-    
-        <label for="horario3" class="radio-button">
-            <input class="horaBoton" type="radio" id="horario3" name="horarios" value="4:00 PM">
-            4:00 PM
-        </label>
+    <div class="fechayhora">
+        <div class="container_calendar">
+            <h3>Turnos disponibles: </h3>
+            <div class="header_calendar">
+                <h1 id="text_day">00</h1>
+                <h5 id="text_month">Null</h5>
+            </div>
+            <div class="body_calendar">
+                <div class="container_details">
+                    <div class="detail_1">
+                        <div class="detail">
+                            <div class="circle">
+                                <div class="column"></div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="circle">
+                                <div class="column"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail_2">
+                        <div class="detail">
+                            <div class="circle">
+                                <div class="column"></div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <div class="circle">
+                                <div class="column"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_change_month">
+                    <button id="last_month">&lt;</button>
+                    <div>
+                        <span id="text_month_02">Null</span>
+                        <span id="text_year">0000</span>
+                    </div>
+                    <button id="next_month">&gt;</button>
+                </div>
+                <div class="container_weedays">
+                    <span class="week_days_item">DOM</span>
+                    <span class="week_days_item">LUN</span>
+                    <span class="week_days_item">MAR</span>
+                    <span class="week_days_item">MÍE</span>
+                    <span class="week_days_item">JUE</span>
+                    <span class="week_days_item">VIE</span>
+                    <span class="week_days_item">SÁB</span>
+                </div>
+                <div class="container_days">
+                    <span class="week_days_item item_day"></span>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="horarios">
+            <h3>Horarios Disponibles:</h3>
+            <label for="horario1" class="radio-button">
+                <input class="horaBoton" type="radio" id="horario1" name="horarios" value="9:00 AM">
+                9:00 AM
+            </label>
+
+            <label for="horario2" class="radio-button">
+                <input class="horaBoton" type="radio" id="horario2" name="horarios" value="1:00 PM">
+                1:00 PM
+            </label>
+
+            <label for="horario3" class="radio-button">
+                <input class="horaBoton" type="radio" id="horario3" name="horarios" value="4:00 PM">
+                4:00 PM
+            </label>
+        </div>
     </div>
-</div>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h4>Confirmacion de Turno</h4>
             <p>Por favor, confirme su turno de [Especialidad]
                 programado para [fecha y hora] con [Especialista]</p>
-                <div class="botones">
+            <div class="botones">
                 <button id="btnAceptar">Confirmar</button>
                 <button id="btnCerrar">Cerrar</button>
             </div>
-          
+
         </div>
     </div>
-    
+
     <section class="finalizar">
         <button class="continuar" id="continuar">continuar</button>
     </section>
 
-<footer>
+    <footer>
         <iframe src="./footer.html" frameborder="0" width="100%" height="191"></iframe>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/turno.js"></script>
 </body>
+
 </html>
