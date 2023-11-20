@@ -112,6 +112,7 @@ th:first-child {
         height: 15em;
         border-collapse: collapse;
     }
+
     .footer {
         height: 18%;
     }
@@ -127,6 +128,7 @@ th:first-child {
         justify-content: center;
         font-size: 1.1em;
     }
+
     .footer {
         height: 21%;
     }
@@ -170,7 +172,6 @@ th:first-child {
     }
 
     .datosPersonales {
-        width: 100%;
         margin: 7% auto auto 7%;
     }
 
@@ -233,4 +234,30 @@ th:first-child {
     .footer {
         height: 44%;
     }
+
+    .material-symbols-outlined {
+        font-size: 1em;
+    }
+
+    .filtros {
+        background-color: #D9D9D9;
+        border: 1px solid black;
+        height: 4em;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .tablas {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 0.5em;
+        flex-direction: column;
+        /* align-content: center; */
+        /* text-align: center; */
+    }
+
 }
