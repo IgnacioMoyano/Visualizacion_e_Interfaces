@@ -6,6 +6,7 @@ var day = now.getDate();
 var month = now.getMonth();
 var currentMonth = month;
 var year = now.getFullYear();
+var selectedDay = day;
 
 
 const modal = document.getElementById('myModal');
@@ -24,39 +25,83 @@ function initCalender(){
     $("#text_month_02").text(monthName[month]);
     $("#text_year").text(year);
 
-    $(".item_day").remove();
+   
+    $(".item_day").remove(); // Elimina los días existentes antes de agregar nuevos
 
-    for(let i = startDay(); i>0; i--){
-        $(".container_days").append
-        (`<span class="week_days_item item_day prev_days">${getTotalDays(month-1)-(i-1)}</span>`);
-    }
+    for (let i = startDay(); i > 0; i--) {
+        const prevDay = getTotalDays(month - 1) - (i - 1);
 
-    for(let i=1; i<=getTotalDays(month); i++){
-        if(i==day && month==currentMonth){
-            $(".container_days").append
-        (`<span class="week_days_item item_day today">${i}</span>`);
-        }else{
-        $(".container_days").append
-        (`<span class="week_days_item item_day">${i}</span>`);
+        // Evita agregar días anteriores a la fecha de hoy
+        if (prevDay >= day || month > currentMonth) {
+            const prevDayElement = document.createElement("span");
+            prevDayElement.className = "week_days_item item_day prev_days disabled";
+            prevDayElement.textContent = prevDay;
+            $(".container_days").append(prevDayElement);
         }
     }
+
+ for (let i = 1; i <= getTotalDays(month); i++) {
+    const dayElement = document.createElement("span");
+    dayElement.className = "week_days_item item_day";
+    dayElement.textContent = i;
+    dayElement.id = "day_" + i;
+
+    // Verifica si el día es anterior al día actual
+    if (year < now.getFullYear() || (year === now.getFullYear() && (month < now.getMonth() || (month === now.getMonth() && i < day)))) {
+        dayElement.classList.add("prev_days", "disabled");
+    } else {
+        dayElement.addEventListener("click", function () {
+            // Solo maneja el clic si el día no es anterior a la fecha de hoy
+            if (i >= day || month > currentMonth) {
+                handleDayClick(i);
+            }
+        });
+    }
+
+    // Resalta el día seleccionado
+    if (i === selectedDay && month === currentMonth) {
+        dayElement.classList.add("selected");
+    }
+
+    // Resalta el día actual
+    if (i === day && month === currentMonth) {
+        dayElement.classList.add("today");
+    }
+
+    $(".container_days").append(dayElement);
+    }
+}
+
+// Nueva función para manejar el clic en un día
+function handleDayClick(clickedDay) {
+    selectedDay = clickedDay;
+    initCalender(); // Vuelve a renderizar el calendario después de la selección
+    $("#text_day").text(clickedDay);
+
+
+    
+
 }
 function getNextMonth(){
-    if(month !== 11){
+    if (month !== 11) {
         month++;
-    }else{
+    } else {
         year++;
         month = 0;
     }
+    day = 1; // Reinicia el día al primer día del nuevo mes
+    currentMonth = month;
     initCalender();
 }
 function getPrevMonth(){
-    if(month !== 0){
+    if (month !== 0) {
         month--;
-    }else{
+    } else {
         year--;
         month = 11;
     }
+    day = 1; // Reinicia el día al primer día del nuevo mes
+    currentMonth = month;
     initCalender();
 }
 function startDay(){
