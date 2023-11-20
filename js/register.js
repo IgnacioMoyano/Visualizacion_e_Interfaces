@@ -1,6 +1,5 @@
 document.getElementById("continuar").addEventListener("click", function(event) {
     event.preventDefault();
-    
     // Llamar a la función de validación antes de guardar los datos
     if (validarFormulario()) {
         guardarDatos();
@@ -14,29 +13,46 @@ function validarFormulario() {
     var correo = document.getElementById("correo").value.trim();
     var contrasenia = document.getElementById("contrasenia").value.trim();
 
-    // Realizar la validación
-    if (nombre === '' || apellido === '') {
-        alert('Todos los campos marcados con (*) son obligatorios.');
-        return false;
+    // Limpiar mensajes de error
+    limpiarMensajesError();
+
+    var validacionCorrecta = true;
+
+    // Validar nombre
+    if (nombre === '') {
+        mostrarError('errorNombre', 'El campo Nombre es obligatorio.');
+        validacionCorrecta = false;
     }
 
     // Validar el formato del correo electrónico
     var regexEmail = /^[0-9a-zA-Z_.-]+@[0-9a-zA-Z.-]+\.[a-zA-Z]{2,}$/;
     if (!regexEmail.test(correo)) {
-        alert('Ingrese un correo electrónico válido.');
-        return false;
+        mostrarError('errorCorreo', 'Ingrese un correo electrónico válido.');
+        validacionCorrecta = false;
     }
 
     // Validar la contraseña
     var regexContrasenia = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
     if (!regexContrasenia.test(contrasenia)) {
-        alert('La contraseña debe tener al menos 8 caracteres y contener letras y números.');
-        return false;
+        mostrarError('errorContrasenia', 'La contraseña debe tener al menos 8 caracteres y contener letras y números.');
+        validacionCorrecta = false;
     }
 
-    // Puedes agregar más validaciones según tus necesidades
+    return validacionCorrecta;
+}
 
-    return true; // Si la validación pasa, retorna true
+// Función para mostrar mensajes de error
+function mostrarError(idElemento, mensaje) {
+    var elementoError = document.getElementById(idElemento);
+    elementoError.textContent = mensaje;
+}
+
+// Función para limpiar mensajes de error
+function limpiarMensajesError() {
+    var elementosError = document.querySelectorAll('.error-message');
+    elementosError.forEach(function(elemento) {
+        elemento.textContent = '';
+    });
 }
 
 document.addEventListener('onhaschange', function(){}, false);
@@ -44,7 +60,7 @@ document.addEventListener('onhaschange', function(){}, false);
 // Función para guardar los datos en sessionStorage y redirigir al usuario
 function guardarDatos() {
     var formulario = document.getElementById("miFormulario");
-    
+
     // Obtener los valores de los campos del formulario
     var nombre = document.getElementById("nombre").value;
     var apellido = document.getElementById("apellido").value;

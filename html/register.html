@@ -19,53 +19,60 @@
         <h1 class="titulo">Registro</h1>
         <h4 class="subtitulo">(*) Todos los campos son obligatorios</h4>
 
-        <div class="Formulario">
-        <form id="miFormulario" action="">
-        <div class="nombreContent">
-            <div class="nombreIconText">
-            <span class="material-symbols-outlined">
-                person
-                </span>
-            <label for="nombre" class="etiquetas" >Nombre (*)</label>
-        </div>
-            <input required type="text" id="nombre" name="nombre" class="entrada" placeholder="Ingrese su nombre">
-        </div>
-            <div class="apellidoContent">
-                <div class="apellidoIconText">
-                <span class="material-symbols-outlined">
-                    group
-                    </span>
-                <label for="apellido" class="etiquetas">Apellido (*)</label>
-            </div>
-                <input required type="text" id="apellido" name="apellido" class="entrada" placeholder="Ingrese su apellido">
-            </div>
-            
-            <div class="correoContent">
-                <div class="correoIconText">
-                <span class="material-symbols-outlined">
-                    mail
-                    </span>
-                <label for="correo" class="etiquetas">Correo (*)</label>
-            </div>
-                <input required type="email" id="correo" name="correo" class="entrada" placeholder="Ingrese su email">
-        </div>
-
-        <div class="contraseniaContent">
-            <div class="contraseniaIconText">
-            <span class="material-symbols-outlined">
-                key
-                </span>
-            <label for="contrasenia" class="etiquetas">Contraseña (*)</label>
-        </div>
-            <input  required type="password" id="contrasenia" name="contrasenia" class="entrada" placeholder="Ingrese su contraseña">
-        </div>
-        
-                <div class="confirmacion"> 
-              <a href="home.html">Cancelar</a>
-            <button value="Continuar" class="button" id="continuar">Continuar</button>
+        <div class="form-container">
+            <form id="miFormulario" action="">
+                <div class="nombreContent">
+                    <div class="nombreIconText">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                        <label for="nombre" class="etiquetas">Nombre (*)</label>
+                    </div>
+                    <input required type="text" id="nombre" name="nombre" class="entrada" placeholder="Ingrese su nombre">
+                    <div id="errorNombre" class="error-message"></div>
                 </div>
-        </form>
+    
+                <div class="apellidoContent">
+                    <div class="apellidoIconText">
+                        <span class="material-symbols-outlined">
+                            group
+                        </span>
+                        <label for="apellido" class="etiquetas">Apellido (*)</label>
+                    </div>
+                    <input required type="text" id="apellido" name="apellido" class="entrada" placeholder="Ingrese su apellido">
+                    <div id="errorApellido" class="error-message"></div>
+                </div>
+    
+                <div class="correoContent">
+                    <div class="correoIconText">
+                        <span class="material-symbols-outlined">
+                            mail
+                        </span>
+                        <label for="correo" class="etiquetas">Correo (*)</label>
+                    </div>
+                    <input required type="email" id="correo" name="correo" class="entrada" placeholder="Ingrese su email">
+                    <div id="errorCorreo" class="error-message"></div>
+                </div>
+    
+                <div class="contraseniaContent">
+                    <div class="contraseniaIconText">
+                        <span class="material-symbols-outlined">
+                            key
+                        </span>
+                        <label for="contrasenia" class="etiquetas">Contraseña (*)</label>
+                    </div>
+                    <input required type="password" id="contrasenia" name="contrasenia" class="entrada" placeholder="Ingrese su contraseña">
+                    <div id="errorContrasenia" class="error-message"></div>
+                </div>
+    
+                <div class="confirmacion"> 
+                    <a href="home.html">Cancelar</a>
+                    <button value="Continuar" class="button" id="continuar">Continuar</button>
+                </div>
+            </form>
         </div>
+    
+        
       
     </main>
     <footer>
